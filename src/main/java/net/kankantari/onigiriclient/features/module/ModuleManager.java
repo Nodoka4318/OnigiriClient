@@ -1,5 +1,7 @@
 package net.kankantari.onigiriclient.features.module;
 
+import net.kankantari.onigiriclient.features.module.movement.Sprint;
+
 import java.util.ArrayList;
 
 public class ModuleManager {
@@ -7,5 +9,6 @@ public class ModuleManager {
 
     public ModuleManager() {
         modules.add(new MyFirstModule());
+        modules.add(new Sprint());
     }
 }
