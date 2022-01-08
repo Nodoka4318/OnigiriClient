@@ -1,5 +1,5 @@
 # OnigiriClient
-マイクラチートクライアント作成チュートリアル用
+マイクラチートクライアント作成チュートリアル用 / Minecraft client coding tutorial
 
 * **まだ未完です。各ブランチを参照ください。**
 
