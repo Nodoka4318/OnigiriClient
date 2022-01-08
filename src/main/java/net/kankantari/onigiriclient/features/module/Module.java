@@ -39,4 +39,11 @@ public class Module {
         }
         istoggled = !istoggled;
     }
+
+    public String getName() {
+        return this.name;
+    }
+    public int getNameLength() {
+        return this.name.length();
+    }
 }

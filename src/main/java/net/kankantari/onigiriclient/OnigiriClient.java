@@ -3,6 +3,7 @@ package net.kankantari.onigiriclient;
 import net.kankantari.onigiriclient.event.PlayerKeyInputEvent;
 import net.kankantari.onigiriclient.event.PlayerTickEvent;
 import net.kankantari.onigiriclient.features.module.ModuleManager;
+import net.kankantari.onigiriclient.features.ui.Hud;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -23,6 +24,7 @@ public class OnigiriClient {
     public static ModuleManager module = new ModuleManager();
     public PlayerKeyInputEvent playerKeyInputEvent = new PlayerKeyInputEvent();
     public PlayerTickEvent playerTickEvent = new PlayerTickEvent();
+    public Hud hud = new Hud();
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -36,5 +38,6 @@ public class OnigiriClient {
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(playerKeyInputEvent);
         MinecraftForge.EVENT_BUS.register(playerTickEvent);
+        MinecraftForge.EVENT_BUS.register(hud);
     }
 }
