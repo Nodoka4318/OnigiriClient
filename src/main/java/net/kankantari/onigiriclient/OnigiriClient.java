@@ -1,6 +1,9 @@
 package net.kankantari.onigiriclient;
 
+import net.kankantari.onigiriclient.event.PlayerKeyInputEvent;
+import net.kankantari.onigiriclient.features.module.ModuleManager;
 import net.minecraft.init.Blocks;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -16,6 +19,9 @@ public class OnigiriClient {
 
     private static Logger logger;
 
+    public static ModuleManager module = new ModuleManager();
+    public PlayerKeyInputEvent playerKeyInputEvent = new PlayerKeyInputEvent();
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
@@ -24,5 +30,8 @@ public class OnigiriClient {
     @EventHandler
     public void init(FMLInitializationEvent event) {
         Display.setTitle(NAME + " " + VERSION);
+
+        MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(playerKeyInputEvent);
     }
 }
