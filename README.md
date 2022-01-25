@@ -5,7 +5,7 @@
 
 ## 記事リンク
 第一回（環境構築）: https://www.kankantari.net/2022/01/08/mcclient1/
-第二回（モジュール）: https://www.kankantari.net/2022/01/16/mcclient2/
+<br>第二回（モジュール）: https://www.kankantari.net/2022/01/16/mcclient2/
 …続く
 
 ## Disclaimer
