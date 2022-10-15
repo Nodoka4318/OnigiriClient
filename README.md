@@ -7,7 +7,7 @@
 第一回（環境構築）: https://www.kankantari.net/2022/01/08/mcclient1/
 <br>第二回（モジュール）: https://www.kankantari.net/2022/01/16/mcclient2/
 <br>第三回（ティックイベント）: https://www.kankantari.net/2022/01/30/mcclient3/
-<br>第四回（HUD）: https://www.kankantari.net/2022/01/30/mcclient4/
+<br>第四回（HUD）: https://www.kankantari.net/2022/08/04/mcclient4/
 <br>（予定）第五回（コマンド）
 <br>（予定）第六回（KillAura）
 <br>（予定）第七回（Settings)
